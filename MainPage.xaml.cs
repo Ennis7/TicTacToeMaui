@@ -56,7 +56,7 @@ namespace TicTacToeMaui
             var increaseSize = new Animation(v => statusLabel.FontSize = 24 + v * 30, 0, 1); 
             var decreaseSize = new Animation(v => statusLabel.FontSize = 34 - v * 10, 0, 1);  
         }
-            private void OnButtonClicked(object sender, EventArgs e)
+            private async void OnButtonClicked(object sender, EventArgs e)
         {
             if (gameEnded) return;
 
